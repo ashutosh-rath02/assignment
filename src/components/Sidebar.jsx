@@ -13,7 +13,7 @@ const Sidebar = ({ menus }) => {
         } flex flex-col bg-primary rounded-4xl p-5 pt-8 relative duration-300 h-[95vh] shadow-2xl`}
       >
         <img
-          src="./src/assets/Control.svg"
+          src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681881/Control_axlhqt.svg"
           className={`cursor-pointer self-end w-7 border-primary
            border-2 rounded-full mb-4 ${!open && "rotate-180 self-center"}`}
           onClick={() => setOpen(!open)}
@@ -21,7 +21,7 @@ const Sidebar = ({ menus }) => {
         <Link to={"/"} style={{ textDecoration: "none" }}>
           <div className="flex gap-x-4 items-center">
             <img
-              src="./src/assets/Logo.svg"
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681882/Logo_igw3aa.svg"
               className={`cursor-pointer self-center mt-1 w-9 ml-2 aspect-square duration-500 ${
                 open && "ml-2 rotate-[360deg]"
               }`}
@@ -45,7 +45,7 @@ const Sidebar = ({ menus }) => {
                   index === 0 && "bg-light-white"
                 }`}
               >
-                <img src={`./src/assets/${Menu.src}`} className="h-5" />
+                <img src={Menu.src} className="h-5" />
                 <span
                   className={`${!open && "hidden"} origin-left duration-200`}
                 >

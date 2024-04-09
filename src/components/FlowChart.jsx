@@ -12,7 +12,8 @@ const FlowChart = ({ steps }) => {
             <div
               className="bg-cover h-24 w-full flex items-center justify-start text-white mx-auto"
               style={{
-                backgroundImage: "url(./src/assets/pentagon.svg)",
+                backgroundImage:
+                  "url(https://res.cloudinary.com/dhnkuonev/image/upload/v1712681884/pentagon_o7z5bp.svg)",
                 backgroundSize: "contain",
                 backgroundRepeat: "no-repeat",
               }}
@@ -21,9 +22,18 @@ const FlowChart = ({ steps }) => {
             </div>
             {index < steps.length - 1 && (
               <div className="flex justify-center items-center">
-                <img src="./src/assets/arrow.svg" alt="arrow" />
-                <img src="./src/assets/timecircle.svg" alt="time circle" />
-                <img src="./src/assets/arrow.svg" alt="arrow" />
+                <img
+                  src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681878/arrow_fbjqvd.svg"
+                  alt="arrow"
+                />
+                <img
+                  src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681880/timecircle_vkmrnu.svg"
+                  alt="time circle"
+                />
+                <img
+                  src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681878/arrow_fbjqvd.svg"
+                  alt="arrow"
+                />
               </div>
             )}
           </div>
@@ -48,7 +58,11 @@ const FlowChart = ({ steps }) => {
           </div>
         ))}
       </div>
-      <img src="./src/assets/arrowlong.svg" alt="arrow" className="w-11/12" />
+      <img
+        src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681879/arrowlong_r6epkz.svg"
+        alt="arrow"
+        className="w-11/12"
+      />
       <div className="w-11/12 px-24 mt-2 flex items-center justify-between">
         <span className="font-bold text-xl">Flow Time = 47 Days</span>
         <span className="font-bold text-xl">Total Active Time = 5 Days</span>

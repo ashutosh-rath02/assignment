@@ -7,7 +7,10 @@ const DataDiv = () => {
           <img src="./src/assets/bell.svg" alt="notification" />
         </button>
         <button className="bg-white rounded-xl border-none shadow-xl px-2 p-1 mr-6">
-          <img src="./src/assets/chat.svg" alt="chat" />
+          <img
+            src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681880/chat_aousmm.svg"
+            alt="chat"
+          />
         </button>
       </div>
       <div className="mt-16 flex flex-col">
@@ -22,7 +25,7 @@ const DataDiv = () => {
       <div className="mt-4 flex items-center justify-center">
         <img
           className="rounded-lg h-auto border-1 shadow-xl"
-          src="./src/assets/video.svg"
+          src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681884/video_w7rvh9.svg"
           alt="video"
         />
       </div>

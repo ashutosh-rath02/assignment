@@ -3,13 +3,37 @@ import CenterScreen from "./CenterScreen";
 import Sidebar from "./Sidebar";
 import SearchPage from "./SearchPage";
 const Menus = [
-  { title: "Home", src: "Home.svg", link: "/" },
-  { title: "Activities", src: "Timer.svg", link: "/build" },
-  { title: "Analytics", src: "Chart.svg", link: "/build" },
-  { title: "Transformation", src: "Rocket.svg", link: "/build" },
-  { title: "Library", src: "library.svg", link: "/build" },
+  {
+    title: "Home",
+    src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681882/Home_jfbmca.svg",
+    link: "/",
+  },
+  {
+    title: "Activities",
+    src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681881/Timer_q59uuv.svg",
+    link: "/build",
+  },
+  {
+    title: "Analytics",
+    src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681880/Chart_ngc5gc.svg",
+    link: "/build",
+  },
+  {
+    title: "Transformation",
+    src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681884/Rocket_lkhcsr.svg",
+    link: "/build",
+  },
+  {
+    title: "Library",
+    src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681882/library_wmstys.svg",
+    link: "/build",
+  },
   { title: "Settings", src: "settingsicon.svg", gap: true, link: "/build" },
-  { title: "Logout", src: "Logout.svg", link: "/build" },
+  {
+    title: "Logout",
+    src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681884/Logout_b9q3dq.svg",
+    link: "/build",
+  },
 ];
 
 const Home = () => {

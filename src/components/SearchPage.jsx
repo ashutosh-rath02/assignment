@@ -35,23 +35,30 @@ const SearchPage = () => {
         <div className="w-3/5 ml-8 pt-6 self-start">
           <SearchBar />
         </div>
-        <div className="w-full flex flex-row justify-end space-x-2 mt-8 mr-6">
-          <button className="bg-white rounded-xl border-none shadow-xl px-2 py-1">
-            <img src="./src/assets/bell.svg" alt="notification" />
-          </button>
-          <button className="bg-white rounded-xl border-none shadow-xl px-2 p-1 mr-6">
-            <img src="./src/assets/chat.svg" alt="chat" />
-          </button>
-          <button className="bg-white rounded-xl border-none shadow-xl px-2 p-1 mr-6">
-            <img src="./src/assets/Settings.svg" alt="settings" />
-          </button>
-          <button>
+        <div className="w-full flex flex-row justify-end space-x-2 mt-8 mr-6 border-0">
+          <button className="flex flex-col items-center justify-center bg-white rounded-xl border-none shadow-xl px-2 py-1">
             <img
-              className="w-8 h-8 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
-              src="./src/assets/avatar.jpg"
-              alt="Rounded avatar"
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681879/bell_tx1jzx.svg"
+              alt="notification"
             />
           </button>
+          <button className="flex flex-col items-center justify-center bg-white rounded-xl border-none shadow-xl px-2 p-1 mr-6">
+            <img
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681880/chat_aousmm.svg"
+              alt="chat"
+            />
+          </button>
+          <button className="flex flex-col items-center justify-center bg-white rounded-xl border-none shadow-xl px-2 p-1 mr-6">
+            <img
+              src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681879/Settings_d5iiu6.svg"
+              alt="settings"
+            />
+          </button>
+          <img
+            className="inline-block size-9 border-2 rounded-full ring-2 ring-white"
+            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            alt=""
+          />
         </div>
       </div>
       <FlowChart {...sampleData} />
