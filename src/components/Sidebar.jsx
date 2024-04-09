@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ menus }) => {
   const [open, setOpen] = useState(true);
@@ -17,28 +18,32 @@ const Sidebar = ({ menus }) => {
            border-2 rounded-full mb-4 ${!open && "rotate-180 self-center"}`}
           onClick={() => setOpen(!open)}
         />
-        <div className="flex gap-x-4 items-center">
-          <img
-            src="./src/assets/Logo.svg"
-            className={`cursor-pointer self-center mt-1 w-9 ml-2 aspect-square duration-500 ${
-              open && "ml-2 rotate-[360deg]"
-            }`}
-          />
-          <h1
-            className={`text-white origin-left font-bold text-xs sm:text-3xl  md:text-4xl duration-200 ${
-              !open && "hidden"
-            }`}
-          >
-            Catalix
-          </h1>
-        </div>
-        <ul className="pt-6 h-full">
+        <Link to={"/"} style={{ textDecoration: "none" }}>
+          <div className="flex gap-x-4 items-center">
+            <img
+              src="./src/assets/Logo.svg"
+              className={`cursor-pointer self-center mt-1 w-9 ml-2 aspect-square duration-500 ${
+                open && "ml-2 rotate-[360deg]"
+              }`}
+            />
+            <h1
+              className={`text-white origin-left font-bold text-xs sm:text-3xl  md:text-4xl duration-200 ${
+                !open && "hidden"
+              }`}
+            >
+              Catalix
+            </h1>
+          </div>
+        </Link>
+        <ul className="pt-6 h-full list-none ">
           {menus.map((Menu, index) => (
-            <>
-              <li
-                key={index}
-                className={`flex rounded-2.5xl p-3 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 
-      ${Menu.gap ? "mt-4" : "mt-4"} ${index === 0 && "bg-light-white"} `}
+            <li key={index}>
+              <Link
+                to={Menu.link}
+                className={`flex no-underline rounded-2.5xl p-3 cursor-pointer hover:bg-light-white text-white text-sm items-center gap-x-4 
+                ${Menu.gap ? "mt-4" : "mt-4"} ${
+                  index === 0 && "bg-light-white"
+                }`}
               >
                 <img src={`./src/assets/${Menu.src}`} className="h-5" />
                 <span
@@ -46,17 +51,14 @@ const Sidebar = ({ menus }) => {
                 >
                   {Menu.title}
                 </span>
-              </li>
+              </Link>
               {menus[index + 1]?.gap && (
                 <div className="h-0.5 mt-24 w-[98%] flex bg-gray-300 items-center"></div>
               )}
-            </>
+            </li>
           ))}
         </ul>
       </div>
-      {/* <div className="h-screen flex-1 p-7">
-        <h1 className="text-2xl font-semibold ">Home Page</h1>
-      </div> */}
     </div>
   );
 };
@@ -67,6 +69,7 @@ Sidebar.propTypes = {
       title: PropTypes.string.isRequired,
       src: PropTypes.string.isRequired,
       gap: PropTypes.bool,
+      link: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

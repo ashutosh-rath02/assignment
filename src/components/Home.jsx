@@ -3,13 +3,13 @@ import CenterScreen from "./CenterScreen";
 import Sidebar from "./Sidebar";
 import SearchPage from "./SearchPage";
 const Menus = [
-  { title: "Home", src: "Home.svg" },
-  { title: "Activities", src: "Timer.svg" },
-  { title: "Analytics", src: "Chart.svg" },
-  { title: "Transformation", src: "Rocket.svg" },
-  { title: "Library", src: "library.svg" },
-  { title: "Settings", src: "settingsicon.svg", gap: true },
-  { title: "Logout", src: "Logout.svg" },
+  { title: "Home", src: "Home.svg", link: "/" },
+  { title: "Activities", src: "Timer.svg", link: "/build" },
+  { title: "Analytics", src: "Chart.svg", link: "/build" },
+  { title: "Transformation", src: "Rocket.svg", link: "/build" },
+  { title: "Library", src: "library.svg", link: "/build" },
+  { title: "Settings", src: "settingsicon.svg", gap: true, link: "/build" },
+  { title: "Logout", src: "Logout.svg", link: "/build" },
 ];
 
 const Home = () => {

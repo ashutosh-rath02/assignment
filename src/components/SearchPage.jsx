@@ -21,7 +21,6 @@ const sampleData = {
     {
       name: "Run Sample Test",
       activeTime: "4 Hours",
-      waitTime: "1 Week (wait for response)",
     },
   ],
   flowTime: "47 Days",
@@ -31,8 +30,8 @@ const sampleData = {
 
 const SearchPage = () => {
   return (
-    <div className="w-full flex flex-col items-center space-y-44">
-      <div className="w-full flex flex-row">
+    <div className="w-full flex flex-col items-center space-y-28">
+      <div className="w-full flex mt-6 flex-row">
         <div className="w-3/5 ml-8 pt-6 self-start">
           <SearchBar />
         </div>
