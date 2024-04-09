@@ -28,7 +28,12 @@ const Menus = [
     src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681882/library_wmstys.svg",
     link: "/build",
   },
-  { title: "Settings", src: "settingsicon.svg", gap: true, link: "/build" },
+  {
+    title: "Settings",
+    src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681880/settingsicon_ssnbur.svg",
+    gap: true,
+    link: "/build",
+  },
   {
     title: "Logout",
     src: "https://res.cloudinary.com/dhnkuonev/image/upload/v1712681884/Logout_b9q3dq.svg",

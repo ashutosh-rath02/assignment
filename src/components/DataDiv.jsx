@@ -4,7 +4,10 @@ const DataDiv = () => {
     <div className="px-8 w-2/4 h-full flex flex-col bg-white shadow-lg">
       <div className="w-full flex flex-row justify-end space-x-2 mt-8">
         <button className="bg-white rounded-xl border-none shadow-xl px-2 py-1">
-          <img src="./src/assets/bell.svg" alt="notification" />
+          <img
+            src="https://res.cloudinary.com/dhnkuonev/image/upload/v1712681879/bell_tx1jzx.svg"
+            alt="notification"
+          />
         </button>
         <button className="bg-white rounded-xl border-none shadow-xl px-2 p-1 mr-6">
           <img
